@@ -2,11 +2,13 @@
 
 ## Setup
 
+
 This project uses [uv](https://github.com/astral-sh/uv) for Python package and environment management.
 
 ### Prerequisites
 
 Install uv:
+
 ```bash
 # Windows (PowerShell)
 powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
@@ -18,11 +20,13 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 ### Getting Started
 
 1. Create virtual environment:
+
 ```bash
 uv venv
 ```
 
 2. Activate the environment:
+
 ```bash
 # Windows
 .venv\Scripts\activate
@@ -32,6 +36,7 @@ source .venv/bin/activate
 ```
 
 3. Install dependencies:
+
 ```bash
 # Install from pyproject.toml
 uv pip install -e .
@@ -43,6 +48,7 @@ uv pip install package-name
 ### Common Commands
 
 ```bash
+
 # Run Python scripts
 uv run python app.py
 

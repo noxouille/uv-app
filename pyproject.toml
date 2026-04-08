@@ -1,5 +1,5 @@
 [project]
-name = "YOUR-PROJECT-NAME"  # TODO: Update this to your project name
+name = "almea"
 version = "0.1.0"
 description = ""
 readme = "README.md"
@@ -34,3 +34,8 @@ quote-style = "double"
 indent-style = "space"
 skip-magic-trailing-comma = false
 line-ending = "auto"
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.5.1",
+]

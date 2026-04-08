@@ -1,0 +1,20 @@
+# Pre-commit hooks configuration
+# https://pre-commit.com/
+
+repos:
+  # Markdown linting
+  - repo: https://github.com/DavidAnson/markdownlint-cli2
+    rev: v0.22.0
+    hooks:
+      - id: markdownlint-cli2
+        name: markdownlint
+        description: "Lint Markdown files with markdownlint-cli2"
+        args: []
+
+  # Python linting and formatting
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.11.0
+    hooks:
+      - id: ruff
+        args: [--fix]
+      - id: ruff-format
