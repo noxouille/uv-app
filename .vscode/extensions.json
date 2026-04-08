@@ -1,0 +1,13 @@
+{
+  "recommendations": [
+    // Markdown
+    "DavidAnson.vscode-markdownlint",
+    
+    // Python
+    "charliermarsh.ruff",
+    
+    // General
+    "redhat.vscode-yaml",
+    "streetsidesoftware.code-spell-checker"
+  ]
+}
