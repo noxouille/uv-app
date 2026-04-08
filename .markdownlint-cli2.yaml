@@ -1,0 +1,33 @@
+# Configuration for markdownlint-cli2
+# https://github.com/DavidAnson/markdownlint-cli2
+
+# Ignore non-markdown files and internal documents
+globs:
+  - "**/*.md"
+  - "!docs/internal/*"
+  - "!**/*.pdf"
+  - "!**/*.docx"
+  - "!.venv/**/*"
+
+config:
+  # Line length - disabled for readability
+  MD013: false
+
+  # Multiple consecutive blank lines - allow up to 2
+  MD012:
+    maximum: 2
+
+  # Ordered list item prefix - disabled (allow any style)
+  MD029: false
+
+  # Fenced code blocks should have a language specified
+  MD040: false
+
+  # Emphasis used as heading - allow in certain cases
+  MD036: false
+
+  # Duplicate headings - allow in user-stories.md (multiple stories)
+  MD024: false
+
+  # Fenced code blocks surrounded by blank lines - too strict for our docs
+  MD031: false
