@@ -10,3 +10,4 @@ logs
 dist/
 build/
 .python-version
+docs/internal/
